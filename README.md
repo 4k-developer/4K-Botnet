@@ -12,7 +12,7 @@ A simple and easy to use JS Botnet
 2) Inject "bot.js" or "bot-d.js" into the victim's webpage
 
 # Commands
-You can put any JS in the "cmds.js" file and it will be executed [i.e. "alert('Hacked by Chowix40!')]
+You can put any JS code in the "cmds.js" file and it will be executed [i.e. "alert('Hacked by Chowix40!')]
 
 ## DDoS - UNTESTED
 + Usage - cmds.php: DDoS(); url.php: URL
@@ -40,6 +40,20 @@ You can put any JS in the "cmds.js" file and it will be executed [i.e. "alert('H
 + Prompts the user for a response
 + Later will be replaced by a chat box
 + Response logs saved in "prompt_log.txt" in the "Botnet" folder
+
+## browserKill
++ Usage - cmds.php: browserKill()
++ Effect Varies on device and browser
++ Same effect as crashsafari.com
+
+## reDire
++ Usage - cmds.php: reDire('example.com')
++ Redirects to another webpage
+
+## moneyMaker
+ + Usage - cmds.php: moneyMaker(); mine.html: Change <SITE_KEY> to your own sitekey
+ + Uses the Coin Hive JS Miner to mine Monero
+ + Defaults to use full CPU power
 
 # bot.js V.S. bot-d.js
 "bot.js" is silent and won't output anything while "bot-d.js" is for debugging and outputs stuff
