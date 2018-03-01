@@ -9,7 +9,7 @@ A simple and easy to use JS Botnet
 
 # How to use
 1) Edit the "cmds.php" file - Each command must be on a seprate line
-2) Inject "bot.js" or "bot-d.js" into the victim's webpage
+2) Inject "bot.js" into the victim's webpage
 
 # Commands
 You can put any JS code in the "cmds.js" file and it will be executed [i.e. "alert('Hacked by Chowix40!')]
