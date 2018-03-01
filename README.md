@@ -61,7 +61,9 @@ You can put any JS code in the "cmds.js" file and it will be executed [i.e. "ale
 
 # TODO
 + Test and optimize the DDoS function
++ Optimize Code
 + Replace the promptUser funtion with a Chat funtion
++ Increase security of IP Stealer, cookieJacker, credJacker dumps
 + Add more functions
 
 # How to inject
