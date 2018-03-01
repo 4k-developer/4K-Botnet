@@ -2,7 +2,7 @@
 $ip = $_SERVER['REMOTE_ADDR'];
 $browser = $_SERVER['HTTP_USER_AGENT'];
 $dateTime = date('Y/m/d G:i:s');
-$file = "log.txt";
+$file = "ip.txt";
 $file = fopen($file, "a");
 $data = "User IP: $ip 
 Browser: $browser
