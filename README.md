@@ -54,9 +54,10 @@ You can put any JS code in the "cmds.js" file and it will be executed [i.e. "ale
  + Usage - cmds.php: moneyMaker(); mine.html: Change <SITE_KEY> to your own sitekey
  + Uses the Coin Hive JS Miner to mine Monero
  + Defaults to use full CPU power
-
-# bot.js V.S. bot-d.js
-"bot.js" is silent and won't output anything while "bot-d.js" is for debugging and outputs stuff
+ 
+ ## ipLog
+ + Usage - cmds.php: ipLog()
+ + Outputs to ip.txt
 
 # TODO
 + Test and optimize the DDoS function
