@@ -75,3 +75,7 @@ You can put any JS code in the "cmds.js" file and it will be executed [i.e. "ale
 + This is for educational purposes ONLY
 + I or anyone else who works on this project can't or won't be held responsible for anything YOU do with this
 + Please use responsibly 
+
+# Donate
++ If you wish to donate money you can
++ https://www.patreon.com/chowix40
