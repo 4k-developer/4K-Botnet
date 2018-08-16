@@ -64,6 +64,8 @@ You can put any JS code in the "cmds.js" file and it will be executed [i.e. "ale
 + Optimize Code
 + Replace the promptUser funtion with a Chat funtion
 + Increase security of IP Stealer, cookieJacker, credJacker dumps
++ Cpanel?
++ Add uids of some sort
 + Add more functions
 
 # How to inject
