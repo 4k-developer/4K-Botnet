@@ -6,8 +6,8 @@ A simple and easy to use JS Botnet
 2) Upload the "Botnet" folder to your webserver
 3) Edit "bot.js"
     + Change the "SERVER_URL" variable to your website's url
-    + Edit "bot.js" (Change the "api_dev_key" varibable to match your pastebin's account key)
-    + Edit "bot.js" (Change the "api_user_key" variable to match your pastebin's account key)
+    + Change the "api_dev_key" varibable to match your pastebin's account key
+    + Change the "api_user_key" variable to match your pastebin's account key
 4) Done
 
 # How to use
